@@ -17,7 +17,7 @@ const CRYPTO_COINS = [
     name: 'Bitcoin',
     symbol: 'BTC',
     icon: '₿',
-    address: '1A1z7agoat2WFvZrrG387W412n4Z1XQJC',
+    address: 'bc1q6hma07d0cmm5e4nvndmrp50a3mh7972unut5kl',
     price: 45000,
   },
   {
@@ -25,7 +25,7 @@ const CRYPTO_COINS = [
     name: 'Ethereum',
     symbol: 'ETH',
     icon: 'Ξ',
-    address: '0x742d35Cc6634C0532925a3b844Bc4e7595f46bE3',
+    address: '0x256b77BeeEc979c7A67Eb972D0A0C0B533169f5a',
     price: 2500,
   },
   {
@@ -33,15 +33,15 @@ const CRYPTO_COINS = [
     name: 'USD Coin',
     symbol: 'USDC',
     icon: 'U',
-    address: '0x742d35Cc6634C0532925a3b844Bc4e7595f46bE3',
+    address: '0x256b77BeeEc979c7A67Eb972D0A0C0B533169f5a',
     price: 1,
   },
   {
     id: 'usdt',
-    name: 'Tether',
+    name: 'Tether(TRC20)',
     symbol: 'USDT',
     icon: '₮',
-    address: '0x742d35Cc6634C0532925a3b844Bc4e7595f46bE3',
+    address: 'TMqH1Y8jVtGuqwnmmYnCqHxfjkN6sMKK8s',
     price: 1,
   },
   {
@@ -49,7 +49,7 @@ const CRYPTO_COINS = [
     name: 'Ripple',
     symbol: 'XRP',
     icon: '✕',
-    address: 'rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH',
+    address: 'r9dGFBPqEiRaTfxdaNyXYTywLQz9HfJrv2',
     price: 0.52,
   },
   {
@@ -57,7 +57,7 @@ const CRYPTO_COINS = [
     name: 'Binance Coin',
     symbol: 'BNB',
     icon: '◆',
-    address: '0x742d35Cc6634C0532925a3b844Bc4e7595f46bE3',
+    address: '0x256b77BeeEc979c7A67Eb972D0A0C0B533169f5a',
     price: 600,
   },
 ]
