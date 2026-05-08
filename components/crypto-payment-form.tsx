@@ -1,14 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ArrowLeft, Copy, Check } from 'lucide-react'
 import QRCode from 'qrcode.react'
-import dynamic from 'next/dynamic'
-
-// Dynamically import QRCode to avoid SSR issues
-const QRCodeComponent = dynamic(() => import('qrcode.react').then(mod => ({ default: mod.default })), {
-  ssr: false,
-})
 
 interface CryptoPaymentFormProps {
   amount: number
@@ -78,7 +72,7 @@ export default function CryptoPaymentForm({ amount, formData, onBack, onClose }:
   const amountNeeded = selectedCoin ? (amount / selectedCoin.price).toFixed(8) : '0'
 
   // Countdown timer effect
-  React.useEffect(() => {
+  useEffect(() => {
     if (!selectedCoin || paymentCompleted) return
 
     const timer = setInterval(() => {
@@ -248,7 +242,7 @@ export default function CryptoPaymentForm({ amount, formData, onBack, onClose }:
 
       {/* QR Code */}
       <div className="flex justify-center bg-white dark:bg-slate-900 rounded-lg p-4 border border-border">
-        <QRCodeComponent
+        <QRCode
           value={selectedCoin.address}
           size={200}
           level="H"
