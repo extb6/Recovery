@@ -11,9 +11,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">+</span>
+                <span className="text-primary-foreground font-bold text-sm">C</span>
               </div>
-              <span className="font-bold text-lg text-foreground">Plus Cloud</span>
+              <span className="font-bold text-lg text-foreground">Cursory</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Professional fund recovery solutions for investment fraud victims.
@@ -58,7 +58,7 @@ export default function Footer() {
         <div className="border-t border-border py-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Plus Cloud. All rights reserved. | Professional Fund Recovery Services
+              © {currentYear} Cursory. All rights reserved. | Professional Fund Recovery Services
             </p>
             <div className="flex gap-4">
               <Link href="#" className="text-muted-foreground hover:text-primary transition">

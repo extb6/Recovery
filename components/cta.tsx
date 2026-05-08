@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Mail, Phone, Clock } from 'lucide-react'
 
 export default function CTA() {
@@ -26,7 +27,7 @@ export default function CTA() {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground mb-1">Email</p>
-                    <p className="text-muted-foreground">recovery@pluscloud.com</p>
+                    <p className="text-muted-foreground">help@cursory.io</p>
                   </div>
                 </div>
 
@@ -36,7 +37,7 @@ export default function CTA() {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground mb-1">Phone</p>
-                    <p className="text-muted-foreground">+1 (800) 555-0147</p>
+                    <p className="text-muted-foreground">(800) 555-1234</p>
                   </div>
                 </div>
 
@@ -75,9 +76,9 @@ export default function CTA() {
                   className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                 />
 
-                <button className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition">
+                <Link href="/schedule" className="inline-block w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition text-center">
                   Schedule Free Consultation
-                </button>
+                </Link>
 
                 <p className="text-xs text-muted-foreground text-center">
                   100% confidential. We never share your information.

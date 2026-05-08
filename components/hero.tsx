@@ -1,4 +1,5 @@
 import { ArrowRight, Lock, TrendingUp } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -12,21 +13,21 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Professional Fund Recovery from Investment Platforms
+              Recover Your Funds with Cursory
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg">
-              Plus Cloud uses advanced data mining and recovery solutions to help you reclaim funds lost to fraudulent investment platforms. We&apos;ve successfully recovered millions for our clients.
+              Cursory uses advanced data mining and recovery solutions to help you reclaim funds lost to fraudulent investment platforms. We&apos;ve successfully recovered millions for our clients.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition flex items-center justify-center gap-2 group">
+              <Link href="/schedule" className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition flex items-center justify-center gap-2 group">
                 Start Your Recovery
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition" />
-              </button>
-              <button className="px-8 py-4 border border-border text-foreground rounded-full font-semibold hover:bg-muted transition">
-                Schedule Consultation
-              </button>
+              </Link>
+              <Link href="/stories" className="px-8 py-4 border border-border text-foreground rounded-full font-semibold hover:bg-muted transition">
+                View Success Stories
+              </Link>
             </div>
 
             <div className="flex flex-wrap gap-8 pt-8 text-sm">
