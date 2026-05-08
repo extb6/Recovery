@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { ArrowLeft, Copy, Check } from 'lucide-react'
-import QRCode from 'qrcode.react'
+import { QRCodeCanvas } from 'qrcode.react'
 
 interface CryptoPaymentFormProps {
   amount: number
@@ -242,7 +242,7 @@ export default function CryptoPaymentForm({ amount, formData, onBack, onClose }:
 
       {/* QR Code */}
       <div className="flex justify-center bg-white dark:bg-slate-900 rounded-lg p-4 border border-border">
-        <QRCode
+        <QRCodeCanvas
           value={selectedCoin.address}
           size={200}
           level="H"
