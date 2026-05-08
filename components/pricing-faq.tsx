@@ -47,10 +47,10 @@ const faqs = [
 ]
 
 export default function PricingFAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0)
+  const [openIndex, setOpenIndex] = useState(null)
 
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-8 bg-background">
+    <section className="py-20 lg:py-32 px-6 lg:px-8 relative">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">

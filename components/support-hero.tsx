@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function SupportHero() {
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-8 bg-background">
+    <section className="py-20 lg:py-32 px-6 lg:px-8 relative">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">

@@ -3,7 +3,7 @@ import { Mail, Phone, Clock } from 'lucide-react'
 
 export default function CTA() {
   return (
-    <section id="contact" className="py-16 lg:py-24 px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-accent/5">
+    <section id="contact" className="py-16 lg:py-24 px-6 lg:px-8 relative">
       <div className="max-w-4xl mx-auto">
         <div className="bg-card border border-border rounded-3xl overflow-hidden">
           <div className="p-8 lg:p-16">

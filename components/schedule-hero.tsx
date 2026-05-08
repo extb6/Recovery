@@ -1,6 +1,6 @@
 export default function ScheduleHero() {
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-8 bg-gradient-to-br from-secondary to-background">
+    <section className="py-20 lg:py-32 px-6 lg:px-8 relative">
       <div className="max-w-4xl mx-auto text-center space-y-6">
         <div className="inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full">
           <p className="text-sm font-medium text-accent">Free Consultation - No Obligation</p>
