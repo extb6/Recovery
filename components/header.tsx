@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 export default function Header() {
@@ -11,9 +12,15 @@ export default function Header() {
     <header className="border-b border-border sticky top-0 z-50 bg-background/95 backdrop-blur">
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">C</span>
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative w-10 h-10">
+            <Image
+              src="/cursory-logo.png"
+              alt="Cursory"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
           <span className="font-bold text-xl text-foreground hidden sm:block">Cursory</span>
         </Link>

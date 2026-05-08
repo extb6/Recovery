@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,8 +11,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">C</span>
+              <div className="relative w-8 h-8">
+                <Image
+                  src="/cursory-logo.png"
+                  alt="Cursory"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <span className="font-bold text-lg text-foreground">Cursory</span>
             </div>

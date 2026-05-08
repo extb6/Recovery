@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Plus Cloud - Fund Recovery Service',
-  description: 'Recover your funds from investment platforms using advanced data mining and recovery solutions',
+  title: 'Cursory - Professional Fund Recovery',
+  description: 'Recover funds from fraudulent investment platforms with Cursory. Advanced data mining, secure payment processing, and 24/7 support.',
   generator: 'v0.app',
   icons: {
     icon: [
