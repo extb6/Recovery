@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Phone, Mail, Shield } from 'lucide-react'
+import PaymentModal from './payment-modal'
 
 export default function ScheduleForm() {
   const [formData, setFormData] = useState({
@@ -16,6 +17,7 @@ export default function ScheduleForm() {
   })
 
   const [submitted, setSubmitted] = useState(false)
+  const [showPaymentModal, setShowPaymentModal] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -25,13 +27,25 @@ export default function ScheduleForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
+    // Show payment modal instead of success message
+    setShowPaymentModal(true)
+  }
+
+  const handlePaymentModalClose = () => {
+    setShowPaymentModal(false)
     setSubmitted(true)
     setTimeout(() => setSubmitted(false), 5000)
   }
 
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-8 bg-background">
-      <div className="max-w-4xl mx-auto">
+    <>
+      <PaymentModal
+        isOpen={showPaymentModal}
+        onClose={handlePaymentModalClose}
+        formData={formData}
+      />
+      <section className="py-20 lg:py-32 px-6 lg:px-8 bg-background">
+        <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Schedule Your Free Consultation
@@ -275,8 +289,9 @@ export default function ScheduleForm() {
               <p className="font-semibold text-foreground text-sm">- Michael Chen, Verified Client</p>
             </div>
           </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
