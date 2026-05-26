@@ -88,22 +88,22 @@ export default function Testimonials() {
           {displayedTestimonials.map((testimonial, idx) => (
             <div 
               key={idx}
-              className="p-8 bg-card border border-border rounded-2xl hover:border-primary/50 transition flex flex-col"
+              className="glass-card p-8 flex flex-col"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={16} className="fill-primary text-primary" />
+                    <Star key={i} size={16} className="fill-cyan-400 text-cyan-400" />
                   ))}
                 </div>
-                <Quote size={20} className="text-primary/50" />
+                <Quote size={20} className="text-cyan-400/50" />
               </div>
 
               <p className="text-foreground leading-relaxed flex-grow mb-6">
                 &quot;{testimonial.text}&quot;
               </p>
 
-              <div className="border-t border-border pt-6">
+              <div className="border-t border-cyan-500/20 pt-6">
                 <p className="font-semibold text-foreground mb-1">
                   {testimonial.name}
                 </p>
@@ -111,7 +111,7 @@ export default function Testimonials() {
                   {testimonial.role}
                 </p>
                 <div className="flex items-center justify-between">
-                  <p className="text-lg font-bold text-primary">
+                  <p className="text-lg font-bold text-cyan-400">
                     {testimonial.amount} Recovered
                   </p>
                   <p className="text-xs text-muted-foreground">

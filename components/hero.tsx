@@ -21,22 +21,22 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="/schedule" className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition flex items-center justify-center gap-2 group">
+              <Link href="/schedule" className="btn-premium flex items-center justify-center gap-2 group px-8 py-4 rounded-full">
                 Start Your Recovery
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition" />
               </Link>
-              <Link href="/stories" className="px-8 py-4 border border-border text-foreground rounded-full font-semibold hover:bg-muted transition">
+              <Link href="/stories" className="px-8 py-4 border border-cyan-500/30 text-foreground rounded-full font-semibold hover:border-cyan-400/60 hover:bg-cyan-500/5 transition">
                 View Success Stories
               </Link>
             </div>
 
             <div className="flex flex-wrap gap-8 pt-8 text-sm">
               <div className="flex items-center gap-2">
-                <Lock size={18} className="text-primary" />
+                <Lock size={18} className="text-cyan-400" />
                 <span className="text-muted-foreground">100% Confidential</span>
               </div>
               <div className="flex items-center gap-2">
-                <TrendingUp size={18} className="text-primary" />
+                <TrendingUp size={18} className="text-cyan-400" />
                 <span className="text-muted-foreground">Success Rate: 89%</span>
               </div>
             </div>

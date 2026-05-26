@@ -29,9 +29,9 @@ export default function Stats() {
           {stats.map((stat, idx) => (
             <div 
               key={idx}
-              className="group p-6 bg-card border border-border rounded-2xl hover:border-primary/50 transition"
+              className="stat-card group"
             >
-              <p className="text-4xl lg:text-5xl font-bold text-primary mb-2">
+              <p className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
                 {stat.number}
               </p>
               <p className="font-semibold text-lg text-foreground mb-2">

@@ -76,12 +76,12 @@ export default function PricingPlans() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {plans.map((plan, idx) => (
             <div 
-              key={idx} 
-              className={`relative rounded-xl border transition-all ${
+              key={idx}
+              className={`glass-card p-8 transition-all ${
                 plan.featured 
-                  ? 'border-primary bg-primary/5 ring-1 ring-primary md:scale-105' 
-                  : 'border-border bg-card hover:shadow-lg'
-              } p-8`}
+                  ? 'ring-2 ring-cyan-400/40 scale-105 lg:scale-100' 
+                  : ''
+              }`}
             >
               {plan.featured && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
@@ -94,9 +94,9 @@ export default function PricingPlans() {
                 <p className="text-muted-foreground text-sm">{plan.description}</p>
               </div>
 
-              <div className="mb-8 pb-8 border-b border-border">
+              <div className="mb-8 pb-8 border-b border-cyan-500/20">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-bold text-primary">{plan.fee}</span>
+                  <span className="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{plan.fee}</span>
                 </div>
                 <p className="text-muted-foreground text-sm mt-2">{plan.feeDescription}</p>
               </div>
@@ -104,7 +104,7 @@ export default function PricingPlans() {
               <ul className="space-y-4 mb-8">
                 {plan.includes.map((item, i) => (
                   <li key={i} className="flex gap-3">
-                    <Check size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                    <Check size={20} className="text-cyan-400 flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-foreground">{item}</span>
                   </li>
                 ))}
@@ -112,8 +112,8 @@ export default function PricingPlans() {
 
               <a href="/schedule" className={`w-full py-3 rounded-full font-semibold transition text-center block ${
                 plan.featured
-                  ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                  : 'border border-border text-foreground hover:bg-muted'
+                  ? 'btn-premium'
+                  : 'border border-cyan-500/30 text-foreground hover:border-cyan-500/60 hover:bg-cyan-500/5'
               }`}>
                 Start Recovery
               </a>

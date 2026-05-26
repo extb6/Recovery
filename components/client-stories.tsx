@@ -97,7 +97,7 @@ export default function ClientStories() {
 
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: story.rating }).map((_, i) => (
-                  <Star key={i} size={16} className="fill-accent text-accent" />
+                  <Star key={i} size={16} className="fill-cyan-400 text-cyan-400" />
                 ))}
               </div>
 
@@ -105,10 +105,10 @@ export default function ClientStories() {
                 {story.story}
               </p>
 
-              <div className="border-t border-border pt-6 space-y-3">
+              <div className="border-t border-cyan-500/20 pt-6 space-y-3">
                 <div className="flex justify-between">
                   <span className="text-sm text-muted-foreground">Amount Recovered:</span>
-                  <span className="font-bold text-primary">{story.amount}</span>
+                  <span className="font-bold text-cyan-400">{story.amount}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-sm text-muted-foreground">Fraudulent Platform:</span>

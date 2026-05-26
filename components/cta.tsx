@@ -67,16 +67,16 @@ export default function CTA() {
                 <input 
                   type="email"
                   placeholder="Email Address"
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+                  className="w-full px-4 py-3 border border-cyan-500/20 rounded-lg bg-background/50 backdrop-blur text-foreground placeholder-muted-foreground focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 transition"
                 />
 
                 <input 
                   type="text"
                   placeholder="Approximate Amount Lost"
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+                  className="w-full px-4 py-3 border border-cyan-500/20 rounded-lg bg-background/50 backdrop-blur text-foreground placeholder-muted-foreground focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 transition"
                 />
 
-                <Link href="/schedule" className="inline-block w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition text-center">
+                <Link href="/schedule" className="btn-premium w-full text-center">
                   Schedule Free Consultation
                 </Link>
 
@@ -93,15 +93,15 @@ export default function CTA() {
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-xs text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xs font-bold">✓</div>
+                  <div className="w-6 h-6 bg-cyan-400/20 rounded-full flex items-center justify-center text-cyan-400 text-xs font-bold">✓</div>
                   ISO 27001 Certified
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xs font-bold">✓</div>
+                  <div className="w-6 h-6 bg-cyan-400/20 rounded-full flex items-center justify-center text-cyan-400 text-xs font-bold">✓</div>
                   Fraud Recovery Licensed
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xs font-bold">✓</div>
+                  <div className="w-6 h-6 bg-cyan-400/20 rounded-full flex items-center justify-center text-cyan-400 text-xs font-bold">✓</div>
                   BBB Accredited
                 </div>
               </div>
